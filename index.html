@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio profesional de Enzo Agustin Baez, estudiante de desarrollo de software." />
+  <title>Enzo Agustin Baez | Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">Enzo Agustin Baez</div>
+      <nav class="nav-links">
+        <a href="#about">Sobre mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Hola, soy</p>
+          <h1>Enzo Agustin Baez</h1>
+          <p class="hero-text">
+            Estudiante de desarrollo de software con pasión por crear soluciones prácticas y aprender tecnologías modernas.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Ver proyectos</a>
+            <a class="btn btn-secondary" href="#contact">Contacto</a>
+          </div>
+        </div>
+        <div class="hero-card reveal">
+          <div class="stats-card">
+            <div>
+              <span>Especialidades</span>
+              <strong>Programación, Redes, Linux</strong>
+            </div>
+            <div>
+              <span>Herramientas</span>
+              <strong>VS Code, Git, Docker</strong>
+            </div>
+            <div>
+              <span>Pasión</span>
+              <strong>IA, soporte técnico y video</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-header reveal">
+          <span class="section-tag">01</span>
+          <h2>Sobre mí</h2>
+        </div>
+        <div class="about-grid reveal">
+          <p>
+            Soy estudiante de desarrollo de software enfocado en construir experiencias digitales coherentes y seguras.
+            Tengo una base sólida en programación, redes, Linux y soporte técnico, junto con interés en inteligencia artificial y edición de video.
+            Mi objetivo es aplicar soluciones eficientes y mantener un enfoque minimalista en cada proyecto.
+          </p>
+          <div class="about-list">
+            <p><strong>Lo que me define</strong></p>
+            <ul>
+              <li>Aprendiz rápido y autodidacta</li>
+              <li>Resolución de problemas con claridad</li>
+              <li>Enfoque práctico y colaborativo</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="section-header reveal">
+          <span class="section-tag">02</span>
+          <h2>Proyectos</h2>
+          <button class="btn btn-add" id="addProjectBtn" type="button">+ Agregar proyecto</button>
+        </div>
+        <div class="project-grid" id="projectGrid">
+          <article class="project-card reveal">
+            <div class="project-header">
+              <h3>Sistema de gestión</h3>
+              <p>Aplicación de seguimiento de tareas y recursos para pequeñas operaciones.</p>
+            </div>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <div class="project-actions">
+              <a class="text-link" href="https://github.com/tu-usuario/proyecto-gestion" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="text-link" href="#" aria-disabled="true">Demo pronto</a>
+            </div>
+            <div class="comment-section">
+              <p class="comment-title">Comentarios</p>
+              <div class="comments-list"></div>
+              <form class="comment-form">
+                <input type="text" name="author" placeholder="Tu nombre" required />
+                <textarea name="comment" placeholder="Escribe una sugerencia o lo que te pareció" rows="3" required></textarea>
+                <button class="btn btn-secondary" type="submit">Enviar comentario</button>
+              </form>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-header">
+              <h3>Dashboard de redes</h3>
+              <p>Panel minimalista para visualizar estado de dispositivos y tráfico de red.</p>
+            </div>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Docker</span>
+              <span>Shell</span>
+            </div>
+            <div class="project-actions">
+              <a class="text-link" href="https://github.com/tu-usuario/dashboard-redes" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <div class="comment-section">
+              <p class="comment-title">Comentarios</p>
+              <div class="comments-list"></div>
+              <form class="comment-form">
+                <input type="text" name="author" placeholder="Tu nombre" required />
+                <textarea name="comment" placeholder="Escribe una sugerencia o lo que te pareció" rows="3" required></textarea>
+                <button class="btn btn-secondary" type="submit">Enviar comentario</button>
+              </form>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-header">
+              <h3>Edición de video</h3>
+              <p>Workflow para creación y exportación rápida de contenido audiovisual.</p>
+            </div>
+            <div class="project-tech">
+              <span>Premiere</span>
+              <span>After Effects</span>
+              <span>FFmpeg</span>
+            </div>
+            <div class="project-actions">
+              <a class="text-link" href="https://github.com/tu-usuario/video-workflow" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <div class="comment-section">
+              <p class="comment-title">Comentarios</p>
+              <div class="comments-list"></div>
+              <form class="comment-form">
+                <input type="text" name="author" placeholder="Tu nombre" required />
+                <textarea name="comment" placeholder="Escribe una sugerencia o lo que te pareció" rows="3" required></textarea>
+                <button class="btn btn-secondary" type="submit">Enviar comentario</button>
+              </form>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="section-header reveal">
+          <span class="section-tag">03</span>
+          <h2>Skills</h2>
+        </div>
+        <div class="skill-grid reveal">
+          <span>Programación</span>
+          <span>Redes</span>
+          <span>Linux</span>
+          <span>Soporte técnico</span>
+          <span>Edición de video</span>
+          <span>Inteligencia Artificial</span>
+          <span>Git</span>
+          <span>Docker</span>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="section-header reveal">
+          <span class="section-tag">04</span>
+          <h2>Contacto</h2>
+        </div>
+        <div class="contact-card reveal">
+          <p>¿Quieres colaborar o conocer mis proyectos más a fondo?</p>
+          <div class="contact-list">
+            <a href="mailto:enzo@example.com">enzo@example.com</a>
+            <a href="https://github.com/tu-usuario" target="_blank" rel="noreferrer">github.com/tu-usuario</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Diseño moderno para portafolio 2025 • Listo para GitHub Pages</p>
+    </footer>
+  </div>
+
+  <div class="modal-overlay" id="projectModal" aria-hidden="true">
+    <div class="modal">
+      <button class="modal-close" id="closeModal" type="button" aria-label="Cerrar ventana">×</button>
+      <h3>Agregar nuevo proyecto</h3>
+      <p class="modal-description">Ingresa los datos completos del proyecto. Solo está permitido con contraseña.</p>
+      <form id="newProjectForm">
+        <label>
+          Nombre del proyecto
+          <input type="text" name="title" required placeholder="Ej. Plataforma de control" />
+        </label>
+        <label>
+          Descripción
+          <textarea name="description" required placeholder="Describe brevemente el proyecto" rows="3"></textarea>
+        </label>
+        <label>
+          Tecnologías (separadas por comas)
+          <input type="text" name="tech" required placeholder="JavaScript, HTML, CSS" />
+        </label>
+        <label>
+          Enlace a GitHub
+          <input type="url" name="github" required placeholder="https://github.com/tu-usuario/proyecto" />
+        </label>
+        <label>
+          Enlace a demo (opcional)
+          <input type="url" name="demo" placeholder="https://demo.com" />
+        </label>
+        <button class="btn btn-primary" type="submit">Guardar proyecto</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
